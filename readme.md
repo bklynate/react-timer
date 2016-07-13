@@ -1,1 +1,3 @@
-Boilerplate React App
+###############################
+React Timer/Counter Application
+###############################
