@@ -2,11 +2,13 @@
   background-color: $nav-background;
 }
 
-.menu>li>a {
-  display: inline;
-  padding: 0;
-}
+.top-bar {
+  .menu-text {
+    color: $nav-text-color;
+  }
 
-.menu>li {
-  color:white;
+  .menu > .menu-text > a {
+    display: inline;
+    padding: 0;
+  }
 }
