@@ -7,8 +7,15 @@
     color: $nav-text-color;
   }
 
+  .top-bar {
+    .active-link {
+      font-weight: bold;
+    }
+  }
+
   .menu > .menu-text > a {
     display: inline;
     padding: 0;
+    font-weight: normal;
   }
 }
