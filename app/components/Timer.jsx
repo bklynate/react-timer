@@ -6,6 +6,7 @@ var Timer = React.createClass({
     return(
       <div>
         <Clock totalSeconds={715}/>
+        <p>Timer is still static - under construction</p>
       </div>
     )
   }
