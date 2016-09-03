@@ -33,8 +33,20 @@ describe('Countdown', () => {
 
       setTimeout(()=>{
         expect(countdown.state.count).toBe(0);
-        done()
+        done();
       }, 3001);
     });
+
+    it('should pause countdown on pause status', (done)=>{
+      var countdown = TestUtils.renderIntoDocument(<Countdown/>);
+      countdown.handleAddTime(3);
+      countdown.handleStatusChange('paused');
+
+      setTimeout(()=>{
+        expect(countdown.state.count).toBe(3);
+        expect(countdown.state.countdownStatus).toBe('paused');
+        done();
+      }, 1001);
+    })
   });
 });

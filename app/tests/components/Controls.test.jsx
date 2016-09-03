@@ -4,7 +4,7 @@ var expect = require('expect');
 var $ = require('jquery');
 var TestUtils = require('react-addons-test-utils');
 
-var Controls = require('Controls')
+var Controls = require('Controls');
 
 describe('Controls', () => {
   // body...
@@ -23,7 +23,7 @@ describe('Controls', () => {
     });
 
     it('should render start when stopped', ()=>{
-      var controls = TestUtils.renderIntoDocument(<Controls countdownStatus='stopped'/>);
+      var controls = TestUtils.renderIntoDocument(<Controls countdownStatus='paused'/>);
       var $el = $(ReactDOM.findDOMNode(controls));
       var $startButton = $el.find('button:contains(Start)')
 
